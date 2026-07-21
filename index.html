@@ -70,13 +70,13 @@
     flex: 1;                    /* Takes all available space on the left */
     min-width: 0;               /* Prevents flex overflow issues */
     margin-right: 30px;         /* Gap before the navigation tabs */
-    height: 100px;               /* Lock the container height */
+    height: 60px;               /* Lock the container height */
 }
 
 .logo img {
     width: 100% !important;     /* Forces the width to fill the container */
     height: 100% !important;    /* Forces the height to match the container */
-    object-fit: fill;           /* 🔥 STRETCHES the image to fit perfectly (no empty space) */
+    object-fit: contain;           /* 🔥 STRETCHES the image to fit perfectly (no empty space) */
     display: block;
 }
 
