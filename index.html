@@ -62,18 +62,20 @@
             align-items: center;
             flex-wrap: wrap;
         }/* --- HEADER LOGO --- */
+/* --- HEADER LOGO (Expanded to fill space) --- */
 .logo {
     display: flex;
     align-items: center;
-    flex-shrink: 0;           /* prevents logo from shrinking on small screens */
-    max-width: 2000px;         /* optional – stops it getting too wide */
+    flex: 1;                    /* 🔥 Takes up all remaining space on the left */
+    min-width: 0;               /* Prevents overflow on small screens */
+    margin-right: 30px;         /* Adds a gap before the navigation tabs */
 }
 
 .logo img {
-    max-height: 80px;
-    width: 100%;
-    height: 100%;              /* Fill the container height */
-    object-fit: cover;         /* Crop to fit without distortion */
+    max-height: 80px;           /* Your desired height (changed from 200px) */
+    width: 100%;                /* 🔥 Makes the image stretch to fill the container width */
+    height: auto;               /* Maintains natural aspect ratio */
+    object-fit: contain;        /* Ensures the logo isn't cropped or distorted */
     display: block;
 }
 
