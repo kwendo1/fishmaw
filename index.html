@@ -63,22 +63,27 @@
             flex-wrap: wrap;
         }/* --- HEADER LOGO --- */
 /* --- HEADER LOGO (Expanded to fill space) --- */
+/* --- HEADER LOGO (Forced Stretch) --- */
 .logo {
     display: flex;
     align-items: center;
-    flex: 1;                    /* 🔥 Takes up all remaining space on the left */
-    min-width: 0;               /* Prevents overflow on small screens */
-    margin-right: 30px;         /* Adds a gap before the navigation tabs */
+    flex: 1;                    /* Takes all available space on the left */
+    min-width: 0;               /* Prevents flex overflow issues */
+    margin-right: 30px;         /* Gap before the navigation tabs */
+    height: 80px;               /* Lock the container height */
 }
 
 .logo img {
-    max-height: 80px;           /* Your desired height (changed from 200px) */
-    width: 100%;                /* 🔥 Makes the image stretch to fill the container width */
-    height: auto;               /* Maintains natural aspect ratio */
-    object-fit: contain;        /* Ensures the logo isn't cropped or distorted */
+    width: 100% !important;     /* Forces the width to fill the container */
+    height: 100% !important;    /* Forces the height to match the container */
+    object-fit: fill;           /* 🔥 STRETCHES the image to fit perfectly (no empty space) */
     display: block;
 }
 
+/* Keep navigation tabs from shrinking */
+nav {
+    flex-shrink: 0;             /* Prevents the menu from getting crushed */
+}
 /* Optional: if logo is still too big, try 40px */
         nav ul {
             list-style: none;
