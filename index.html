@@ -70,9 +70,10 @@
 }
 
 .logo img {
-    max-height: 80px;         /* adjust this value to fit your header */
-    width: 300px;              /* keeps the aspect ratio */
-    height: auto;             /* ensures height doesn't force overflow */
+    max-height: 80px;
+    width: 100%;
+    height: 100%;              /* Fill the container height */
+    object-fit: cover;         /* Crop to fit without distortion */
     display: block;
 }
 
