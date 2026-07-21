@@ -646,6 +646,33 @@
             width: 100%;
             text-align: center;
         }
+        /* ----- PROJECT OVERLAY (new) ----- */
+.project-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);
+    padding: 20px 15px 12px;
+    opacity: 0;
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+.project-location {
+    color: var(--gold);
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+.project-meta {
+    color: #ddd;
+    font-size: 0.8rem;
+    margin-top: 2px;
+}
 
         /* ----- FLOATING WHATSAPP ----- */
         .whatsapp-float {
@@ -822,27 +849,28 @@
     </div>
 </header>
     <!-- ===== HERO ===== -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-text">
-                <div class="hero-badge"><i class="fas fa-map-pin"></i> Made in Kenya</div>
-                <h1>Built Strong. <br /><span>Designed to Impress.</span></h1>
-                <p>Premium steel gates, doors, windows &amp; railings – crafted with Kenyan pride by Mawke Welding.</p>
-                <a href="#contact" class="btn">Request a Quote</a>
-                <a href="https://wa.me/4368110373964?text=Hello%20Mawke%20Welding%2C%20I%27d%20like%20to%20inquire%20about%20your%20products." target="_blank" class="btn btn-whatsapp" style="margin-left: 15px;">
-                    <i class="fab fa-whatsapp"></i> Order via WhatsApp
-                </a>
-            </div>
-            <div class="hero-image">
-                <i class="fas fa-door-open"></i>
-                <div class="small-icons">
-                    <i class="fas fa-gate"></i>
-                    <i class="fas fa-window-maximize"></i>
-                    <i class="fas fa-shield-alt"></i>
-                </div>
+<!-- ===== HERO ===== -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-text">
+            <div class="hero-badge"><i class="fas fa-map-pin"></i> Serving Nairobi, Kiambu, Nakuru &amp; Mombasa</div>
+            <h1>Custom Gates, Steel Doors &amp; <span>Metal Fabrication</span> in Kenya</h1>
+            <p>We design, fabricate and install premium gates, doors, railings, windows and structural steel across Kenya.</p>
+            <a href="#contact" class="btn">Request a Free Quote</a>
+            <a href="https://wa.me/4368110373964?text=Hello%20Mawke%20Welding%2C%20I%20need%20a%20free%20quote%20for%20my%20project." target="_blank" class="btn btn-whatsapp" style="margin-left: 15px;">
+                <i class="fab fa-whatsapp"></i> Send Photos for Quote
+            </a>
+        </div>
+        <div class="hero-image">
+            <i class="fas fa-door-open"></i>
+            <div class="small-icons">
+                <i class="fas fa-gate"></i>
+                <i class="fas fa-window-maximize"></i>
+                <i class="fas fa-shield-alt"></i>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- ===== ABOUT ===== -->
     <section class="about" id="about">
@@ -1039,93 +1067,232 @@
                 <h2>Our Projects</h2>
                 <p>Quality work, happy clients – a glimpse of what we do</p>
             </div>
-           <div class="project-grid">
-                   <!-- Project 1 -->
+          <div class="project-grid">
+    <!-- Project 1 -->
     <div class="project-card fade-in">
         <div class="project-image" style="background-image: url('pic/w1.jpeg');">
+            <div class="project-overlay">
+                <span class="project-location"><i class="fas fa-map-pin"></i> Nairobi</span>
+                <span class="project-meta">Materials: Mild Steel</span>
+                <span class="project-meta">Completed: 3 Days</span>
+            </div>
         </div>
-       
-    </div>
-    <!-- Project 1 -->
-    <div class="project-card fade-in">
-        <div class="project-image" style="background-image: url('pic/w6.jpeg');">
+        <div class="project-info">
+            <h3>Sliding Gate – Westlands</h3>
+            <p>Heavy-duty sliding gate with a sleek black powder-coated finish. Client wanted an automated system with remote access.</p>
         </div>
-       
-    </div>
-    <!-- Project 1 -->
-    <div class="project-card fade-in">
-        <div class="project-image" style="background-image: url('pic/w7.jpeg');">
-        </div>
-       
-    </div>
-    <!-- Project 1 -->
-    <div class="project-card fade-in">
-        <div class="project-image" style="background-image: url('pic/w8.jpeg');">
-        </div>
-       
-    </div>
-    <!-- Project 1 -->
-    <div class="project-card fade-in">
-        <div class="project-image" style="background-image: url('pic/w9.jpeg');">
-        </div>
-       
-    </div>
-    <!-- Project 1 -->
-    <div class="project-card fade-in">
-        <div class="project-image" style="background-image: url('pic/w10.jpeg');">
-        </div>
-       
-    </div>
-    <!-- Project 1 -->
-    <div class="project-card fade-in">
-        <div class="project-image" style="background-image: url('pic/w11.jpeg');">
-        </div>
-       
-    </div>
-
-    <!-- Project 1 -->
-    <div class="project-card fade-in">
-        <div class="project-image" style="background-image: url('pic/w12.jpeg');">
-        </div>
-       
     </div>
 
     <!-- Project 2 -->
     <div class="project-card fade-in">
         <div class="project-image" style="background-image: url('pic/w2.jpeg');">
-           
+            <div class="project-overlay">
+                <span class="project-location"><i class="fas fa-map-pin"></i> Kiambu</span>
+                <span class="project-meta">Materials: Galvanized Steel</span>
+                <span class="project-meta">Completed: 2 Days</span>
+            </div>
         </div>
-        
+        <div class="project-info">
+            <h3>Security Door – Kiambu</h3>
+            <p>Custom security door with a 5-point locking system. Designed to match the modern aesthetic of a luxury home.</p>
+        </div>
     </div>
 
     <!-- Project 3 -->
     <div class="project-card fade-in">
         <div class="project-image" style="background-image: url('pic/w3.jpeg');">
-
+            <div class="project-overlay">
+                <span class="project-location"><i class="fas fa-map-pin"></i> Nakuru</span>
+                <span class="project-meta">Materials: Stainless Steel</span>
+                <span class="project-meta">Completed: 4 Days</span>
+            </div>
         </div>
-       
+        <div class="project-info">
+            <h3>Balcony Railings – Nakuru</h3>
+            <p>Modern glass and steel balcony railings with a polished finish. Perfect for a high-end apartment complex.</p>
+        </div>
     </div>
 
     <!-- Project 4 -->
     <div class="project-card fade-in">
         <div class="project-image" style="background-image: url('pic/w4.jpeg');">
-           
+            <div class="project-overlay">
+                <span class="project-location"><i class="fas fa-map-pin"></i> Thika</span>
+                <span class="project-meta">Materials: Heavy-Duty Steel</span>
+                <span class="project-meta">Completed: 5 Days</span>
+            </div>
         </div>
-        
+        <div class="project-info">
+            <h3>Swing Gate – Thika</h3>
+            <p>Classic swing gate with ornate scrollwork. Built to withstand high winds and heavy daily use.</p>
+        </div>
     </div>
 
     <!-- Project 5 -->
     <div class="project-card fade-in">
         <div class="project-image" style="background-image: url('pic/w5.jpeg');">
-           
+            <div class="project-overlay">
+                <span class="project-location"><i class="fas fa-map-pin"></i> Ruiru</span>
+                <span class="project-meta">Materials: Powder-Coated Steel</span>
+                <span class="project-meta">Completed: 2 Days</span>
+            </div>
         </div>
-        
+        <div class="project-info">
+            <h3>Window Grills – Ruiru</h3>
+            <p>Burglar-proof window grills with decorative patterns. Designed for both security and curb appeal.</p>
+        </div>
     </div>
 
     <!-- Project 6 -->
-  
+    <div class="project-card fade-in">
+        <div class="project-image" style="background-image: url('pic/w6.jpeg');">
+            <div class="project-overlay">
+                <span class="project-location"><i class="fas fa-map-pin"></i> Mombasa</span>
+                <span class="project-meta">Materials: Structural Steel</span>
+                <span class="project-meta">Completed: 10 Days</span>
+            </div>
+        </div>
+        <div class="project-info">
+            <h3>Structural Steel – Mombasa</h3>
+            <p>Industrial steel framework for a warehouse. Custom fabricated on-site to meet strict load-bearing requirements.</p>
+        </div>
+    </div>
+
+    <!-- Project 7 -->
+    <div class="project-card fade-in">
+        <div class="project-image" style="background-image: url('pic/w7.jpeg');">
+            <div class="project-overlay">
+                <span class="project-location"><i class="fas fa-map-pin"></i> Nairobi</span>
+                <span class="project-meta">Materials: Galvanized Steel</span>
+                <span class="project-meta">Completed: 4 Days</span>
+            </div>
+        </div>
+        <div class="project-info">
+            <h3>Automated Gate – Nairobi</h3>
+            <p>Fully automated sliding gate with solar-powered opener. Includes safety sensors and remote control.</p>
+        </div>
+    </div>
+
+    <!-- Project 8 -->
+    <div class="project-card fade-in">
+        <div class="project-image" style="background-image: url('pic/w8.jpeg');">
+            <div class="project-overlay">
+                <span class="project-location"><i class="fas fa-map-pin"></i> Kiambu</span>
+                <span class="project-meta">Materials: Mild Steel</span>
+                <span class="project-meta">Completed: 3 Days</span>
+            </div>
+        </div>
+        <div class="project-info">
+            <h3>Steel Door – Kiambu</h3>
+            <p>Decorative steel door with elegant geometric panels. Installed as the main entrance for a modern villa.</p>
+        </div>
+    </div>
+
+    <!-- Project 9 -->
+    <div class="project-card fade-in">
+        <div class="project-image" style="background-image: url('pic/w9.jpeg');">
+            <div class="project-overlay">
+                <span class="project-location"><i class="fas fa-map-pin"></i> Nakuru</span>
+                <span class="project-meta">Materials: Structural Steel</span>
+                <span class="project-meta">Completed: 7 Days</span>
+            </div>
+        </div>
+        <div class="project-info">
+            <h3>Carport – Nakuru</h3>
+            <p>Custom steel carport designed for two vehicles. Includes a durable powder-coated finish for weather resistance.</p>
+        </div>
+    </div>
+
+    <!-- Project 10 -->
+    <div class="project-card fade-in">
+        <div class="project-image" style="background-image: url('pic/w10.jpeg');">
+            <div class="project-overlay">
+                <span class="project-location"><i class="fas fa-map-pin"></i> Thika</span>
+                <span class="project-meta">Materials: Stainless Steel</span>
+                <span class="project-meta">Completed: 4 Days</span>
+            </div>
+        </div>
+        <div class="project-info">
+            <h3>Stair Railings – Thika</h3>
+            <p>Modern glass stair railings with stainless steel handrails. Installed in a commercial office building.</p>
+        </div>
+    </div>
+
+    <!-- Project 11 -->
+    <div class="project-card fade-in">
+        <div class="project-image" style="background-image: url('pic/w11.jpeg');">
+            <div class="project-overlay">
+                <span class="project-location"><i class="fas fa-map-pin"></i> Ruiru</span>
+                <span class="project-meta">Materials: Heavy-Duty Steel</span>
+                <span class="project-meta">Completed: 3 Days</span>
+            </div>
+        </div>
+        <div class="project-info">
+            <h3>Burglar Grills – Ruiru</h3>
+            <p>Maximum security grills for a commercial storefront. Custom measurements and powder-coated in a dark grey finish.</p>
+        </div>
+    </div>
+
+    <!-- Project 12 -->
+    <div class="project-card fade-in">
+        <div class="project-image" style="background-image: url('pic/w12.jpeg');">
+            <div class="project-overlay">
+                <span class="project-location"><i class="fas fa-map-pin"></i> Mombasa</span>
+                <span class="project-meta">Materials: Galvanized Steel</span>
+                <span class="project-meta">Completed: 6 Days</span>
+            </div>
+        </div>
+        <div class="project-info">
+            <h3>French Doors – Mombasa</h3>
+            <p>Elegant steel French doors with glass panels. Designed for a beachfront villa, combining style with coastal durability.</p>
+        </div>
+    </div>
 </div>
     </section>
+    <!-- ===== TESTIMONIALS ===== -->
+<section class="testimonials" id="testimonials" style="padding: 60px 0; background: #f8f8f8;">
+    <div class="container">
+        <div class="section-title fade-in">
+            <h2>What Our Clients Say</h2>
+            <p>Real reviews from real customers across Kenya</p>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card" style="background: white; padding: 25px; border-radius: 16px; box-shadow: var(--shadow);">
+                <p style="font-style: italic; color: #333;">"Mawke installed our sliding gate in Nairobi. The quality is unmatched and they finished way ahead of schedule. Highly recommend!"</p>
+                <div style="display: flex; align-items: center; margin-top: 15px;">
+                    <img src="pic/client1.jpg" alt="Client" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; background: #ccc;" onerror="this.src='https://ui-avatars.com/api/?name=John+Kamau&background=bb271a&color=fff'">
+                    <div style="margin-left: 15px;">
+                        <h4 style="font-size: 1rem;">John Kamau</h4>
+                        <span style="color: var(--gold);">⭐⭐⭐⭐⭐</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card" style="background: white; padding: 25px; border-radius: 16px; box-shadow: var(--shadow);">
+                <p style="font-style: italic; color: #333;">"I needed custom balcony railings for my apartment in Kiambu. They did a fantastic job and the powder coating is still perfect."</p>
+                <div style="display: flex; align-items: center; margin-top: 15px;">
+                    <img src="pic/client2.jpg" alt="Client" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; background: #ccc;" onerror="this.src='https://ui-avatars.com/api/?name=Mary+Muthoni&background=bb271a&color=fff'">
+                    <div style="margin-left: 15px;">
+                        <h4 style="font-size: 1rem;">Mary Muthoni</h4>
+                        <span style="color: var(--gold);">⭐⭐⭐⭐⭐</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card" style="background: white; padding: 25px; border-radius: 16px; box-shadow: var(--shadow);">
+                <p style="font-style: italic; color: #333;">"The structural steel for my warehouse in Nakuru was fabricated perfectly. Professional team and great communication."</p>
+                <div style="display: flex; align-items: center; margin-top: 15px;">
+                    <img src="pic/client3.jpg" alt="Client" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; background: #ccc;" onerror="this.src='https://ui-avatars.com/api/?name=Peter+Ochieng&background=bb271a&color=fff'">
+                    <div style="margin-left: 15px;">
+                        <h4 style="font-size: 1rem;">Peter Ochieng</h4>
+                        <span style="color: var(--gold);">⭐⭐⭐⭐⭐</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- ===== CONTACT ===== -->
     <section class="contact" id="contact">
@@ -1201,8 +1368,12 @@
     <!-- ===== FLOATING WHATSAPP BUTTON ===== -->
     <a href="https://wa.me/4368110373964?text=Hello%20Mawke%20Welding%2C%20I%27d%20like%20to%20inquire%20about%20your%20products." target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
         <i class="fab fa-whatsapp"></i>
-        <span class="tooltip">Order via WhatsApp</span>
-    </a>
+        <span class="tooltip"  style="right: 100px;">Order via WhatsApp</span>
+    </a><!-- ===== FLOATING QUOTE BUTTON (Add this) ===== -->
+<a href="#contact" class="whatsapp-float" style="right: 100px; background: var(--gold); color: var(--kenya-black);" aria-label="Request a Free Quote">
+    <i class="fas fa-file-invoice"></i>
+    <span class="tooltip" style="right: 100px;">Get a Free Quote</span>
+</a>
 
     <!-- ===== SCRIPTS ===== -->
     <script>
